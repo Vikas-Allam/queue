@@ -1,0 +1,30 @@
+#include<iostream>
+#include<queue>
+
+using namespace std;
+void print(queue<int>arr)
+{
+       while(!arr.empty()) 
+{
+    cout<<arr.front()<<"";
+    cout<<endl;
+   arr.pop();
+    
+}
+}
+
+int main()
+{
+    queue<int>arr;
+  
+       arr.push(1);
+       arr.push(2);
+       arr.push(3);
+       arr.push(4);
+       arr.push(5);
+         print(arr);
+        cout<<"--------"<<"\n";
+                 arr.pop();
+     print(arr);
+         return 0;
+}
